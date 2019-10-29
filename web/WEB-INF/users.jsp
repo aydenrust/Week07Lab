@@ -60,7 +60,12 @@
             name="password" 
             placeholder="Password"
             required
-            />
+                />
+          <select class="input-dark" required>
+              <option>regular user</option>
+              <option>system admin</option>
+              <option>company admin</option>
+          </select>
           <input type="hidden" name="action" value="add" />
           <input class="input-primary" type="submit" value="Save"/>
         </form>
@@ -143,6 +148,11 @@
             value="${user.password}"
             placeholder="Password"
             />
+          <select class="input-dark">
+              <option>regular user</option>
+              <option>system admin</option>
+              <option>company admin</option>
+          </select>
             <input type="hidden" name="action" value="edit" />
             <input class="mb-0 input-primary" type="submit" value="Save"/>
             <a href="/users?action=clearEdit">
